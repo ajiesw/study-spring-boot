@@ -1,0 +1,49 @@
+# 对空格要求很高
+# 可以注入到配置类中
+#server:
+#  port: 8888
+
+# 多环境配置
+
+
+#  对象
+user:
+  name: kuer
+  age: 3
+
+#  行内写法
+user1: {name: kuer, age: 3}
+
+age: 32
+name: wkj
+
+#  数组
+pets:
+  - cat
+  - dog
+
+pets1: [cat, dog]
+
+person:
+  name: 你好
+  age: 18
+  life: true
+  birth: 2000/04/21
+  info:
+    key1: value1
+    key2: value2
+  relation:
+    - father
+    - mather
+  dog:
+    name: 点点
+    age: 2
+spring:
+  profiles:
+    active: pro
+
+---
+server:
+  port: 8083
+spring:
+  profiles: pro
