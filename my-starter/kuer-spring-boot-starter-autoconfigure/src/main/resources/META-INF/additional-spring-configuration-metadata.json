@@ -1,0 +1,16 @@
+{
+  "properties": [
+    {
+      "name": "kuer.hello.prefix",
+      "type": "java.lang.String",
+      "defaultValue": "prefix",
+      "sourceType": "com.kuer.properties.HelloProperties"
+    },
+    {
+      "name": "kuer.hello.suffix",
+      "type": "java.lang.String",
+      "defaultValue": "suffix",
+      "sourceType": "com.kuer.properties.HelloProperties"
+    }
+  ]
+}

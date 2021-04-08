@@ -47,3 +47,4 @@ server:
   port: 8083
 spring:
   profiles: pro
+debug: true
