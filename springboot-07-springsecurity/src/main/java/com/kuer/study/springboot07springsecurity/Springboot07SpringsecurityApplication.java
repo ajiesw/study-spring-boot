@@ -1,16 +1,13 @@
-package com.kuer.study.data;
+package com.kuer.study.springboot07springsecurity;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-/**
- * @author kuer
- */
 @SpringBootApplication
-public class DataApplication {
+public class Springboot07SpringsecurityApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DataApplication.class, args);
+        SpringApplication.run(Springboot07SpringsecurityApplication.class, args);
     }
 
 }

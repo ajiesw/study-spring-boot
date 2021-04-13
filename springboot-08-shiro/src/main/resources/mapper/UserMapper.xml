@@ -1,0 +1,13 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.kuer.study.springboot08shiro.mapper.UserMapper">
+    <select id="queryUserByName" resultType="User" parameterType="string">
+        select id, name, password
+        from user
+        <where>
+            name = #{name}
+        </where>
+    </select>
+</mapper>

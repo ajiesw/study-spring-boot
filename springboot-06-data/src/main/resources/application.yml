@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    username: root
+    password: root123
+    url: jdbc:mysql://localhost:3306/mybatis?userUnicode=true&characterEncoding=utf-8&useSSL=true&serviceTimeZone=Asia/Shanghai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    # 配置监控拦截的filters：stat:监控统计、log4j：日志记录、wall：防御sql注入
+    # 如果运行报错 java.lang,ClassNotFoundException： org.apache.log4j.Priority
+    # 需要导入log4j
+    filters: stat,wall,log4j
+    maxPoolPreparedStatementPerConnectionSize: 20
+    useGlobalDataSourceStat: true
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
+
+#整合mybatis
+mybatis:
+  type-aliases-package: com.kuer.study.data.entity
+  mapper-locations: classpath:mapper/*Mapper.xml

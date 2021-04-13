@@ -1,4 +1,4 @@
-package com.kuer.study.data;
+package com.kuer.study.springboot08shiro;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,10 +7,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author kuer
  */
 @SpringBootApplication
-public class DataApplication {
+public class ShiroApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DataApplication.class, args);
+        SpringApplication.run(ShiroApplication.class, args);
     }
 
 }
